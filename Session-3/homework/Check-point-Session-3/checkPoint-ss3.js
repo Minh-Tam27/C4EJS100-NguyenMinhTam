@@ -26,7 +26,7 @@ movies.splice(k,1);
 console.log(movies);
 
 console.log('Ex 5.2 - Delete');
-var n = prompt('How many movies you wanna delete?');
+var n = prompt('How many movie you wanna delete?');
 var i = prompt('Enter the position of the first movie you wanna delete:');
 movies.splice(i,n);
 console.log(movies);
@@ -80,12 +80,13 @@ while (true)
     if (ans = 2)
     {
         alert('Bravo, you are correct');
+        break;
     }
     else
     {
         alert('Good luck next time');
-        break;
     }
 }
 
 console.log('Ex 9 - BT thêm');
+
