@@ -56,6 +56,7 @@ for (var p=0; p<movies.length; p++)
 }
     console.log(movies);
 
+{
 console.log('Ex 8.1 - Purpose of While');
 while (true)
 {
@@ -71,7 +72,9 @@ while (true)
         break;
     }
 }
+}
 
+{
 console.log('Ex 8.2 - Purpose of While');
 alert('Where is Vietnam?' + '\n' + '1. Africa' + '\n' + '2. Asia' + '\n' + '3. Europe' + '\n' + '4. Americas');
 while (true)
@@ -87,6 +90,42 @@ while (true)
         alert('Good luck next time');
     }
 }
+}
 
+{
 console.log('Ex 9 - BT thêm');
+let n = prompt('Enter the number of elements');
+let arr = [];
+    for (let i = 0; i < n; i++) 
+    {
+    arr.push(prompt('Enter no.' + `${i}` +':'));
+    }
+    arr.sort(function(a, b){return a - b});
+alert(arr);
 
+let chan = []
+let le = [];
+for (let i=0; i<arr.length; i++) 
+    {
+    if (arr[i]%2 == 0) 
+    {
+        chan.push(arr[i]);
+    }
+    else le.push(arr[i]);
+    }
+alert('số chẵn có trong mảng: ' + `${chan}` + '\n' + 'số lẻ có trong mảng:' + `${le}`);
+
+let tle = [];
+for (let tl=0; tl<le.length; tl++) {
+    if (!tle.includes(le[tl])) {
+        tle.push(le[tl]);
+    }
+}
+let tchan = [];
+for (let tc = 0; tc < chan.length; tc++) {
+    if (!tchan.includes(chan[tc])) {
+        tchan.push(chan[tc]);
+    }
+}
+alert('dãy chẵn đã lọc trong mảng: ' + `${tchan}` + '\n' + 'dãy lẻ đã lọc trong mảng:' + `${tle}`);
+}
