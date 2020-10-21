@@ -1,12 +1,12 @@
 console.log('Ex 6:');
-let a = prompt('Enter a squence of numbers, sperated by ","');
-s = a.split(',');
-let min = s[0];
-for(let i=0; i<s.length; i++)
+var s = prompt('Enter a squence of numbers, sperated by ","');
+var a = s.split(',').map(a => +a)
+var min = a[0];
+for(let i=0; i<a.length; i++)
 {
-    if(Number(min)>Number(s[i]))
+    if(min>a[i])
     {
-        min = s[i];
+        min = a[i];
     }
 }
-alert ('The smallest number is' `${min}`);
+alert ('The smallest number is '+ `${min}`);
