@@ -1,14 +1,11 @@
 console.log('Ex 7:');
-const a = [2,3,9,11,98];
-const i = prompt('Enter a number');
-    for (let n=0; n<a.length; n++)
+let a = [2,3,9,11,98];
+let i = prompt('Enter a number');
+    if (a.indexOf(Number(i))==-1)
     {
-        if (i == a[n])
-        {
-        alert(`${i}` + ' is FOUND is my array at index ' + `${n}`);
-        }
-        else 
-        {
-        alert(`${i}` + ' is not FOUND is my array');
-        }
+    alert(`${i}` + ' is not FOUND is my array');
+    }
+    else 
+    {
+    alert(`${i}` + ' is FOUND is my array at index ' + `${a.indexOf(Number(i))}`);
     }
