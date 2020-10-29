@@ -56,4 +56,3 @@ for(let lap of laptopByBrand[a])
     count += lap.price*lap.quantity;
     str += '\n' + lap.name; 
 }
-alert(`There are ${laptopByBrand[a].length} generations of ${a} inventory ${count}`);
