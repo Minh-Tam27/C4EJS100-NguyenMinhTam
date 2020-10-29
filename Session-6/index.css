@@ -1,0 +1,44 @@
+h1
+{
+    color: brown;
+}
+p {
+    background-color: burlywood;
+}
+#name {
+    background-color: chocolate;
+    color: crimson;
+    text-decoration: underline;
+}
+.italic {
+    font-style: italic;
+}
+.white {
+    color: white;
+}
+[href]
+{
+    font-size: 24px;
+}
+[type = "pw"]
+{
+    border: solid grey 2px;
+}
+nav a {
+    text-decoration: line-through;
+}
+nav > a {
+    color: hotpink;
+}
+Click:active {
+    background-color: lavender;
+}
+input:focus{
+    border: lightcoral solid;
+}
+img {
+    width: 40%;
+}
+img:hover {
+    border: gray 2px solid;
+}
